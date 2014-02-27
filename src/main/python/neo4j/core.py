@@ -96,7 +96,7 @@ class PropertyContainer(extends(PropertyContainer)):
         if v != None: 
             return v
         
-        raise KeyError("No property with key #{key}.")
+        raise KeyError("No property with key %r." % (key,))
             
     def __setitem__(self, key, value):
         self.set_property(key, value)
